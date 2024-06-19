@@ -6,7 +6,7 @@ pipeline {
 		registryCredentials='dockerhub'
 		project='actividad 3-jenkins-dados'
 		projectVersion='1.0'
-		repository='https://github.com/jloblue/eoi-devops.githttps://github.com/jloblue/eoi-devops.git'
+		repository='https://github.com/jloblue/eoi-devops.git'
 		repositoryCredentials='github'
     
 	}
