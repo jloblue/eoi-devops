@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        registry = 'jloblue/actividad 3-jenkins-dados'
+        registry = 'jloblue/actividad-jenkins-dados'
 		registryCredentials='dockerhub'
-		project='actividad 3-jenkins-dados'
+		project='actividad-jenkins-dados'
 		projectVersion='1.0'
 		repository='https://github.com/jloblue/eoi-devops.git'
 		repositoryCredentials='github'
@@ -31,7 +31,7 @@ pipeline {
         stage('Build - CreacionContenedor') {
             steps {
                 script {
-                    dockerImage = docker.build registry
+                    dockerImage= docker.build registry
                 }
             }
         }
