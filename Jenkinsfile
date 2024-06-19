@@ -40,6 +40,7 @@ pipeline {
             steps {
                 script {
 					try{
+					sh 'docker rm -f $project || true'
                     sh 'docker run --name $project $registry'
                     }
 					finally{
@@ -79,3 +80,4 @@ pipeline {
         }
     }
 }
+
