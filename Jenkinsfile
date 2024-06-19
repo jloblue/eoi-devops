@@ -43,7 +43,7 @@ pipeline {
                     sh 'docker run --name $project $registry'
                     }
 					finally{
-					sh 'docker rm --name $project'
+					sh 'docker rm $project'
 					}
 						
 				}   
